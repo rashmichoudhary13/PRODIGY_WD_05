@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Weather application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+    <!-- Search Box -->
+    <div class="search">
+      <i class="bx bx-map loc"></i>
+      <input type="text" placeholder="Enter your location" />
+      <button class="bx bx-search-alt-2 btn"></button>
+    </div>
+
+    <!-- Main Container section -->
+    <div class="container">
+      
+      <div class="container-hide">
+
+        <!-- Content for temperature -->
+        <div class="main-content">
+          <img src="images/cloud.png" />
+
+          <div class="text-content">
+            <p class="data">0<span>°C</span></p>
+            <div class="location-content">
+              <p class="location">Desc</p>
+            </div>
+          </div>
+        </div>
+         
+        <!-- Content for Humidity and wind -->
+        <div class="weather">
+          <div class="weather-info">
+            <i class="bx bx-water"></i>
+            <span class="humid"> 0 %</span>
+            <p>Humidity</p>
+          </div>
+
+          <div class="weather-info">
+            <i class="bx bx-wind"></i>
+            <span class="wind">0 km/hr</span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+
+       <!-- Location not found section -->
+      <div class="not-found">
+        <img src="images/404.png" alt="">
+        <p>Oops! Location not found!</p>
+      </div>
+      
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
